@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Houseplant Haven</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="product-list">
+    <h2>Our Houseplants</h2>
+
+    <div class="category">Succulents</div>
+    <div class="plant">
+      <p class="plant-name">Succulent</p>
+      <p>Price: $10</p>
+      <button onclick="addToCart(0)">Add to Cart</button>
+    </div>
+
+    <div class="category">Ferns</div>
+    <div class="plant">
+      <p class="plant-name">Fern</p>
+      <p>Price: $15</p>
+      <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="category">Cacti</div>
+    <div class="plant">
+      <p class="plant-name">Cactus</p>
+      <p>Price: $20</p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+  </section>
+</body>
+</html>
